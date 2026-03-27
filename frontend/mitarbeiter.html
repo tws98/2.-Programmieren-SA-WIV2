@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superdiesel - Mitarbeiter anlegen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Mitarbeiter anlegen</h1>
+        </header>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="success" class="success" style="display: none;"></div>
+
+        <form id="mitarbeiter-form">
+
+            <div class="form-group">
+                <label for="Anrede">Anrede *</label>
+                <select id="Anrede" name="Anrede" required>
+                    <option value="">Bitte wählen...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Vorname">Vorname *</label>
+                <input type="text" id="Vorname" name="Vorname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Name">Nachname *</label>
+                <input type="text" id="Name" name="Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Strasse">Straße *</label>
+                <input type="text" id="Strasse" name="Strasse" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Hausnummer">Hausnummer *</label>
+                <input type="text" id="Hausnummer" name="Hausnummer" required>
+            </div>
+
+            <div class="form-group">
+                <label>PLZ / Ort *</label>
+
+                <div class="plz-ort-row">
+                    <input type="text" id="PLZ" name="PLZ" maxlength="5" required>
+
+                    <select id="Ort" name="Ort" required>
+                        <option value="">Bitte Orte laden</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Telefonnummer">Telefonnummer *</label>
+                <input type="text" id="Telefonnummer" name="Telefonnummer" required>
+            </div>
+
+            <div class="form-actions">
+
+                <button id="loadOrteBtn" class="btn btn-secondary">
+                    Orte laden
+                </button>
+
+                <button type="submit" class="btn btn-primary">
+                    Mitarbeiter anlegen
+                </button>
+
+                <a href="index.html" class="btn btn-cancel">
+                    Cancel
+                </a>
+            </div>
+
+        </form>
+    </main>
+
+    <script src="mitarbeiter.js"></script>
+</body>
+
+</html>

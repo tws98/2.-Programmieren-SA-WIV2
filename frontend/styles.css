@@ -1,0 +1,169 @@
+/* Grundlayout */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c3c5c8; /* dunkler Hintergrund */
+    color: #333;
+}
+
+/* Zentrierter Container */
+.container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #f5f6fa; /* heller Mittelblock */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Header */
+.header h1 {
+    margin-bottom: 20px;
+}
+
+/* Button-Bereich oben */
+.actions {
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Primärer Button (blau) */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Hover Effekt */
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+#mitarbeiterListe li {
+    background-color: #e9ecef; /* leicht gräulich */
+    margin: 10px 0;
+    padding: 12px 16px;
+    border-radius: 10px;
+
+    /* dezente Umrandung im Button-Stil */
+    border: 2px solid #007bff;
+
+    /* leichter Schatten für Tiefe */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+    /* optional: etwas sauberere Schrift */
+    font-weight: 500;
+}
+
+/* Formular allgemein */
+form {
+    text-align: left;
+}
+
+/* Form-Gruppen */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Labels linksbündig */
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs & Selects */
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ced4da; /* leicht graue Umrandung */
+    font-size: 14px;
+    outline: none;
+}
+
+/* Fokus-Effekt */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+}
+
+/* PLZ + Ort nebeneinander */
+.plz-ort-row {
+    display: flex;
+    gap: 10px;
+}
+
+/* PLZ Feld kleiner */
+.plz-ort-row input {
+    flex: 1;
+}
+
+/* Ort Dropdown größer */
+.plz-ort-row select {
+    flex: 2;
+}
+
+/* Buttons unten */
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Roter Button (Orte laden) */
+.btn-secondary {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #a71d2a;
+}
+
+/* Blauer Button (Submit) bleibt wie vorher */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Grüner Cancel Button */
+.btn-cancel {
+    background-color: #198754;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #146c43;
+}
+
+/* Fehlermeldung */
+.error {
+    background-color: #fee;
+    color: #c33;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Erfolgsmeldung */
+.success {
+    background-color: #efe;
+    color: #2a7;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: left;
+}

@@ -14,46 +14,45 @@
             <h1>Mitarbeiter anlegen</h1>
         </header>
 
-        <div id="error" class="error" style="display: none;"></div>
-
-        <div id="success" class="success" style="display: none;"></div>
+        <div id="error-message" class="error" style="display: none;"></div>
+        <div id="success-message" class="success" style="display: none;"></div>
 
         <form id="mitarbeiter-form">
 
             <div class="form-group">
                 <label for="Anrede">Anrede *</label>
-                <select id="Anrede" name="Anrede" required>
+                <select id="Anrede" name="Anrede">
                     <option value="">Bitte wählen...</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="Vorname">Vorname *</label>
-                <input type="text" id="Vorname" name="Vorname" required>
+                <input type="text" id="Vorname" name="Vorname">
             </div>
 
             <div class="form-group">
                 <label for="Name">Nachname *</label>
-                <input type="text" id="Name" name="Name" required>
+                <input type="text" id="Name" name="Name">
             </div>
 
             <div class="form-group">
                 <label for="Strasse">Straße *</label>
-                <input type="text" id="Strasse" name="Strasse" required>
+                <input type="text" id="Strasse" name="Strasse">
             </div>
 
             <div class="form-group">
                 <label for="Hausnummer">Hausnummer *</label>
-                <input type="text" id="Hausnummer" name="Hausnummer" required>
+                <input type="text" id="Hausnummer" name="Hausnummer">
             </div>
 
             <div class="form-group">
                 <label>PLZ / Ort *</label>
 
                 <div class="plz-ort-row">
-                    <input type="text" id="PLZ" name="PLZ" maxlength="5" required>
+                    <input type="text" id="PLZ" name="PLZ">
 
-                    <select id="Ort" name="Ort" required>
+                    <select id="Ort" name="Ort">
                         <option value="">Bitte Orte laden</option>
                     </select>
                 </div>
@@ -61,7 +60,7 @@
 
             <div class="form-group">
                 <label for="Telefonnummer">Telefonnummer *</label>
-                <input type="text" id="Telefonnummer" name="Telefonnummer" required>
+                <input type="text" id="Telefonnummer" name="Telefonnummer">
             </div>
 
             <div class="form-actions">

@@ -22,5 +22,11 @@ def get_connection() -> sqlite3.Connection:
     connection.row_factory = sqlite3.Row
     return connection
 
+
+# Schüler Eingabe
+
+
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)

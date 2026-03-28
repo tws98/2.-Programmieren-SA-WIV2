@@ -1,14 +1,18 @@
 SELECT_MITARBEITER = """
     SELECT 
-        ID_Mitarbeiter,
-        Anrede,
-        Vorname,
-        Name,
-        Strasse,
-        Hausnr,
-        ID_Ort,
-        Telefon
-    FROM mitarbeiter
+    m.ID_Mitarbeiter,
+    a.Anrede,
+    m.Vorname,
+    m.Name,
+    m.Strasse,
+    m.Hausnr,
+    o.PLZ,
+    o.Ort,
+    m.Telefon
+FROM mitarbeiter m
+JOIN anrede a ON m.Anrede = a.ID_Anrede
+JOIN ort o ON m.ID_Ort = o.ID_Ort
+ORDER BY m.ID_Mitarbeiter;
 """
 
 SELECT_ORT_BY_PLZ = """
